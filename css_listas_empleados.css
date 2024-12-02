@@ -1,0 +1,98 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 1100px;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    color: #007bff; /* Azul */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Actions column (edit, delete buttons) */
+.actions a {
+    margin-right: 10px;
+}
+
+.actions img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.actions img:hover {
+    opacity: 0.7;
+}
+
+/* Button for "Regresar" */
+.back-button {
+    background-color: #42a5f5; /* Azul primario */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #1e88e5; /* Azul más oscuro */
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .back-button {
+        width: 100%;
+    }
+}

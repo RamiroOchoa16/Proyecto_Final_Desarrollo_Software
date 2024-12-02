@@ -1,0 +1,109 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 600px;
+}
+
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.add-button {
+    background-color: #42a5f5;
+    color: #ffffff;
+}
+
+button.add-button:hover {
+    background-color: #1e88e5;
+}
+
+button.exit-button {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+button.exit-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

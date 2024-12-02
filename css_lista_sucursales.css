@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+    background-color: #add8e6; /* Azul claro */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo de la tabla */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo de las celdas */
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+    background-color: #add8e6; /* Azul claro */
+    color: #333;
+    font-weight: bold;
+}
+
+/* Alternar colores en las filas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para los botones de acción */
+a img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilo del botón de regresar */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+span {
+    display: inline-flex;
+    gap: 25px; /* Espacio entre los botones */
+}
+
+.mensaje {
+    background-color: #d4edda; /* Fondo verde claro para éxito */
+    color: #155724; /* Texto verde oscuro */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+}

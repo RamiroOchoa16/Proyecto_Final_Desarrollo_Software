@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Pildora</title>
+    <link rel="icon" type="image/x-icon" href="img/Logo1.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6c83d0;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: #5a6dbd;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li a:hover {
+            background-color: #4e5fa0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .container section {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .b1, .b7, .b8 {
+            width: 100%;
+            background-color: #6c83d0;
+            color: white;
+            padding: 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .b1:hover, .b7:hover, .b8:hover {
+            background-color: #5a6dbd;
+            transform: translateY(-3px);
+        }
+
+        .b1 p, .b7 p, .b8 p {
+            margin: 0;
+        }
+
+        .log {
+            height: 30px;
+            width: 30px;
+            margin-left: 10px;
+        }
+
+        footer {
+            background-color: #5a6dbd;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Login.php">
+                        <img src="img/cerrar-sesion.png" alt="Salir" class="log">
+                        <span>Salir</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="left">
+            <div class="arriba">
+                <div class="arriba1">
+                    <a href="Nueva_Venta.php">
+                        <button class="b1">
+                            <p class="tito">Nueva Venta</p>
+                            <img class="log" src="img/nueva-factura.png" alt="Venta">
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="abajo">
+                <div class="abajo1">
+                    <button onclick="window.location.href='Checar_Caducidades.php';" class="b8">
+                        <p class="tit">Checar Caducidades</p>
+                        <img class="log" src="img/caducado.png" alt="Caducidades">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="right">
+            <div class="abajo">
+                <div class="abajo1">
+                    <button onclick="window.location.href='Agregar_Pedido.php';" class="b7">
+                        <p class="tit">Registrar Pedidos</p>
+                        <img class="log" src="img/solicitudes_producto.png" alt="Registrar Pedidos">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+        <p>
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos de Servicio</a>
+        </p>
+    </footer>
+
+</body>
+</html>
